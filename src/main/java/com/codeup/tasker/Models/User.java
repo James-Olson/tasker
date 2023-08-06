@@ -5,5 +5,6 @@ import lombok.Setter;
 public class User {
     @Getter
     @Setter
+            ....
 
 }

@@ -14,7 +14,7 @@ import java.util.List;
 @NoArgsConstructor
 @Entity
 
-@Table(name="Users")
+@Table(name = "users")
 public class User {
 
     @Id
@@ -26,9 +26,5 @@ public class User {
     private String email;
     @Column(nullable = false)
     private String password;
-
-    @OneToMany(nullable = true)
-    @JoinColumn(name = "Task")
-
 
 }

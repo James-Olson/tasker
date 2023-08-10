@@ -8,10 +8,23 @@
 
 <h1>This is Home</h1>
 
+<th:block>
+    <div th:each="Username : ${Username}"/>
+</th:block>
+
+<th:block>
+    task + complete checkbox + in progress checkbox
+</th:block>
+
+`<input type="checkbox">`
+
+
+
+
 <th:blck>
     <div th:each="task : ${taskList}">
         <p th:text="'Title: ' + ${task.taskTitle}" />
-        <p th:text="''"
+        <p th:text="''"/>
     </div>
 </th:blck>
 

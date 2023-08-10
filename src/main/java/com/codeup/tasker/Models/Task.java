@@ -14,21 +14,14 @@ import java.util.List;
 @NoArgsConstructor
 @Entity
 
-@Table(name="Users")
-public class User {
 
+@Table(name="Tasks")
+public class Task {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @Column(nullable = false, columnDefinition = "VARCHAR(100)")
-    private String username;
-    @Column(nullable = true, columnDefinition = "VARCHAR(100)")
-    private String email;
-    @Column(nullable = false)
-    private String password;
-
-    @OneToMany(nullable = true)
-    @JoinColumn(name = "Task")
-
-
+    @Column(nullable = false, columnDefinition = "")
+    private String title;
+    @Column(nullable = true, columnDefinition = "")
+    private String body;
 }

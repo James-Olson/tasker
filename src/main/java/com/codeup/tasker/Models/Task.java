@@ -25,10 +25,9 @@ public class Task {
     @Column(nullable = true, columnDefinition = "Text")
     private String body;
 
-    @ManyToMany(cascade = CascadeType.ALL)
-    @JoinTable(name = "TaskType",
-    joinColumns = {@JoinColumn(name = "task_type")},
-    inverseJoinColumns = {@JoinColumn(name = "task_id")}
-    )
-    List<Task>task;
+    @ManyToOne
+    @JoinColumn(name = "user_id")
+    private User user;
+
+
 }

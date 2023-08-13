@@ -8,10 +8,10 @@ import lombok.Setter;
 
 import java.util.List;
 
-@Getter
-@Setter
 @AllArgsConstructor
 @NoArgsConstructor
+@Getter
+@Setter
 @Entity
 
 @Table(name = "users")
@@ -26,4 +26,20 @@ public class User {
     private String email;
     @Column(nullable = false)
     private String password;
+
+//    public User(User copy) {
+//        this.id = copy.id;
+//        this.username = copy.username;
+//        this.email = copy.email;
+//        this.password = copy.password;
+//    }
+
+    public user = User user {
+        this.id = user.id;
+        this.username = user.username;
+        this.email = user.email;
+        this.password = user.password;
+
+    }
+
 }

@@ -13,20 +13,16 @@
 </th:block>
 
 <th:block>
-    task + complete checkbox + in progress checkbox
+    <div th:each="Task : ${Task}"/>
 </th:block>
 
-`<input type="checkbox">`
 
-
-
-
-<th:blck>
+<th:block>
     <div th:each="task : ${taskList}">
         <p th:text="'Title: ' + ${task.taskTitle}" />
         <p th:text="''"/>
     </div>
-</th:blck>
+</th:block>
 
 </body>
 </html>

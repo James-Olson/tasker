@@ -24,10 +24,4 @@ public class Task {
     private String title;
     @Column(nullable = true, columnDefinition = "Text")
     private String body;
-
-    @ManyToOne
-    @JoinColumn(name = "user_id")
-    private User user;
-
-
 }

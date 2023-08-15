@@ -14,7 +14,7 @@ import java.util.List;
 @Setter
 @Entity
 
-@Table(name = "users")
+@Table(name = "Users")
 public class User {
 
     @Id
@@ -34,12 +34,12 @@ public class User {
 //        this.password = copy.password;
 //    }
 
-    public user = User user {
-        this.id = user.id;
-        this.username = user.username;
-        this.email = user.email;
-        this.password = user.password;
-
-    }
+//    public User user {
+//        this.id = user.id;
+//        this.username = user.username;
+//        this.email = user.email;
+//        this.password = user.password;
+//
+//    }
 
 }

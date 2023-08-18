@@ -15,8 +15,3 @@ public class LoginController {
     }
 }
 
-//    @PostMapping("login")
-//    public String AcceptedLogin(@ModelAttribute User user){
-//        return "Home";
-//    }
-//}

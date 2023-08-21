@@ -34,12 +34,4 @@ public class User {
         this.password = copy.password;
     }
 
-//    public User user {
-//        this.id = user.id;
-//        this.username = user.username;
-//        this.email = user.email;
-//        this.password = user.password;
-//
-//    }
-
 }

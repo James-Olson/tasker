@@ -15,7 +15,7 @@
 </head>
 <body>
 
-<form>
+<form th:action="@{/login}" method="post">
     <div class="form-group">
         <label for="Username">Username</label>
         <input class="form-control" id="Username" placeholder="Enter username">
@@ -24,7 +24,7 @@
         <label for="exampleInputPassword1">Password</label>
         <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
     </div>
-    <button type="submit" class="btn btn-primary">Submidddt</button>
+    <button type="submit" class="btn btn-primary">Submit</button>
 </form>
 
 </body>

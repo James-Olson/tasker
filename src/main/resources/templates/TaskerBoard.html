@@ -11,43 +11,21 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
             crossorigin="anonymous"></script>
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-        body {
-            margin: 0;
-            font-family: Helvetica;
-            font-weight: bold;
-        }
-        .flex-container {
-            width: 100%;
-            border: 3px solid goldenrod;
-            display: flex;
-            justify-content: center;
-
-        }
-        .flex-item {
-            background: #BFD45D;
-            border: 2px solid #F9EFD6;
-            padding: 1em;
-            flex-grow: 2;
-        }
-    </style>
 </head>
 <body>
+<nav th:replace="~{partials/NavBar::myNav}"></nav>
 
 
 <div class="container">
-    <div class="row">
+    <div class="row" id="layout">
         <div class="col-sm">
-            One of three columns
+            To-Do
         </div>
         <div class="col-sm">
-            One of three columns
+            In Progress
         </div>
         <div class="col-sm">
-            One of three columns
+            finished
         </div>
     </div>
 </div>

@@ -27,12 +27,12 @@ public class User {
     @Column(nullable = false)
     private String password;
 
-//    public User(User copy) {
-//        this.id = copy.id;
-//        this.username = copy.username;
-//        this.email = copy.email;
-//        this.password = copy.password;
-//    }
+    public User(User copy) {
+        this.id = copy.id;
+        this.username = copy.username;
+        this.email = copy.email;
+        this.password = copy.password;
+    }
 
 //    public User user {
 //        this.id = user.id;

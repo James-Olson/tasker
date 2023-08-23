@@ -36,3 +36,4 @@ build/
 
 #app props
 src/main/resources/application.properties
+target

@@ -20,16 +20,16 @@ public class SignupController {
     }
 
 
-    @GetMapping("signup")
+    @GetMapping("/signup")
     public String Login(Model model) {
         model.addAttribute("user", new User());
-        return "Home";
+        return "Signup";
     }
 
-    @PostMapping("signup")
+    @PostMapping("/signup")
     public String Signup(@ModelAttribute User user) {
         usersDao.save(user);
-        return "Home";
+        return "Signup";
     }
 }
 

@@ -53,7 +53,9 @@ public class SecurityConfiguration {
 //                        .requestMatchers().authenticated()
                         /* Pages that do not require authentication
                          * anyone can visit the home page, register, login, and view ads */
-                        .requestMatchers("/", "login", "taskerboard", "taskerboardselection").permitAll()
+
+                // Please ensure you have
+                        .requestMatchers("/", "/login", "/signup").permitAll()
                         // allow loading of static resources
                         .requestMatchers("/css/**", "/js/**", "/img/**").permitAll()
                 )

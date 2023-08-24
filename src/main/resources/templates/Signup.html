@@ -15,19 +15,19 @@
 </head>
 <body>
 
-<form th:action="@{/signup}" method="post">
+<form th:action="@{/signup}" method="post" th:object="${user}">
   <div class="form-group">
     <label for="Username">Username</label>
-    <input class="form-control" id="Username" placeholder="Enter username">
+    <input class="form-control" id="Username" placeholder="Enter username" th:field="*{username}">
   </div>
   <div class="form-group">
     <label for="email">email</label>
-    <input class="form-control" id="email" placeholder="email">
+    <input class="form-control" id="email" placeholder="email" th:field="*{email}">
     <small>optional</small>
   </div>
   <div class="form-group">
     <label for="exampleInputPassword1">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" th:field="*{password}">
   </div>
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>

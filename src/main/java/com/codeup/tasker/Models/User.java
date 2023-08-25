@@ -22,9 +22,9 @@ public class User {
     private Long id;
     @Column(nullable = false, columnDefinition = "VARCHAR(100)")
     private String username;
-    @Column(nullable = true, columnDefinition = "VARCHAR(100)")
+    @Column(nullable = false, columnDefinition = "VARCHAR(100)")
     private String email;
-    @Column(nullable = false)
+    @Column(nullable = false, columnDefinition = "VARCHAR(100)")
     private String password;
 
     public User(User copy) {

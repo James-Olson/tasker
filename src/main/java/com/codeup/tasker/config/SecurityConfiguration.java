@@ -1,3 +1,4 @@
+
 package com.codeup.tasker.config;
 
 //import com.codeup.tasker.services.UserDetailsLoader;
@@ -48,16 +49,16 @@ public class SecurityConfiguration {
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http.authorizeHttpRequests((requests) -> requests
-                        /* Pages that require authentication
-                         * only authenticated users can create and edit ads */
+                                /* Pages that require authentication
+                                 * only authenticated users can create and edit ads */
 //                        .requestMatchers().authenticated()
-                        /* Pages that do not require authentication
-                         * anyone can visit the home page, register, login, and view ads */
+                                /* Pages that do not require authentication
+                                 * anyone can visit the home page, register, login, and view ads */
 
-                // Please ensure you have
-                        .requestMatchers("/", "/login", "/signup").permitAll()
-                        // allow loading of static resources
-                        .requestMatchers("/css/**", "/js/**", "/img/**").permitAll()
+                                // Please ensure you have
+                                .requestMatchers("/", "/login", "/signup").permitAll()
+                                // allow loading of static resources
+                                .requestMatchers("/css/**", "/js/**", "/img/**").permitAll()
                 )
                 /* Login configuration */
                 .formLogin((login) -> login.loginPage("/login").defaultSuccessUrl("/posts"))

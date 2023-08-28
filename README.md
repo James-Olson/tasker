@@ -1,3 +1,3 @@
 # tasker
 
-Creating an app in Java using Spring Boot 
+Creating an app in Java

@@ -1,3 +1,3 @@
 # tasker
 
-Creating an app in Java
+Creating an app in Java for the web
